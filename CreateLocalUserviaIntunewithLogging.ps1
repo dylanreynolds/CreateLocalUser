@@ -72,7 +72,7 @@ If (Get-LocalUser -Name $adminUsername -ErrorAction SilentlyContinue) {
     Invoke-WebRequest -v "https://github.com/dylanreynolds/GenerateSecureString/blob/main/Password.txt" -outfile $folder"\Password.txt"
     
     # Read the encrypted password from file
-    $encryptedPassword = Get-Content -Path ".\Password.txt" | ConvertTo-SecureString
+    $encryptedPassword = Get-Content -Path $folder"\Password.txt" | ConvertTo-SecureString
     $adminAccountParams = @{
         Name = $adminUsername
         FullName = $adminFullName

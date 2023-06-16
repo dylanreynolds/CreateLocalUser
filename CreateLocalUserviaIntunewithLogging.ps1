@@ -69,7 +69,7 @@ If (Get-LocalUser -Name $adminUsername -ErrorAction SilentlyContinue) {
     Try {
     Write-Output "User account with that name does not exists, creating user account password..." 
     Write-Output "Downloading securepassword..."
-    Invoke-WebRequest -v "https://github.com/dylanreynolds/GenerateSecureString/blob/main/Password.txt" -outfile $folder"\Password.txt"
+    Invoke-WebRequest -v "https://raw.githubusercontent.com/dylanreynolds/GenerateSecureString/main/Password.txt" -outfile $folder"\Password.txt"
     
     # Read the encrypted password from file
     $encryptedPassword = Get-Content -Path $folder"\Password.txt" | ConvertTo-SecureString

@@ -8,8 +8,8 @@ $LogFile = "$folder"+"\"+"$LogFileName.Log"
 
 
 # Create the new local user account
-$adminUsername = "adminTest"
-$adminFullName = "Test Admin account"
+$adminUsername = "admin"
+$adminFullName = "Local Admin"
 $adminDescription = "Last Updated "+$DateStr
 
 Start-Transcript $LogFile -Force

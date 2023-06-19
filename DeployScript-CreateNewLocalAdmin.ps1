@@ -1,5 +1,5 @@
 # Edit the URL to your blob storage path
-$PSurl= "https://raw.githubusercontent.com/dylanreynolds/CreateLocalUser/main/CreateLocalUserviaIntunewithLogging.ps1"
+$PSurl= "https://raw.githubusercontent.com/dylanreynolds/CreateLocalUserUsingMachineCredentials/main/CreateLocalUserviaIntunewithLoggingRequiresMachineKey.ps1"
 
 # Location where we will add the script to run on logon
 $regKeyLocation ="HKCU:\Software\Microsoft\Windows\CurrentVersion\RunOnce"
